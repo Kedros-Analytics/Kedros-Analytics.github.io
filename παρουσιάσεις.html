@@ -63,13 +63,13 @@
 					<div id="main">
 						<div class="inner">
 
-<h1>Free reports &amp; analytics resources</h1>
-Various reports, notebooks, videos &amp; tutorials. All resources can also be accessed through <a href="https://github.com/mantzos/">GitHub</a> &amp; <a href="https://www.youtube.com/@mattheosprotopapas3286">YouTube</a>.
+<h1>Παρουσιάσεις</h1>
+Videos, tutorials και άλλο υλικό στα ελληνικά, διαθέσιμο μέσω των <a href="https://github.com/mantzos/">GitHub</a> &amp; <a href="https://www.youtube.com/@mattheosprotopapas3286">YouTube</a>.
 <hr>
 <h2>DAX Tips #1: Calculate percentage changes, skipping dates with no values</h2>
-<p>Some people want to calculate sales percentage changes across dates, skipping dates with no sales. So the sales of each date should be compared to the immediately previous date that actually has numbers, skipping dates that have zero sales (or whatever) in between. You may see an approach to do this in the following video: </p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4HQbVjyKCiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p><a href="https://github.com/mantzos" class="icon brands style2 fa-github"><span class="label">GitHub</span></a><b> <a href="https://github.com/mantzos/Power-BI-Demos/raw/main/tips/DoD%20excluding%20Empty%20Values.pbix">Download the Power BI file</b></a></p>
+<p>Η ανακάλυψη ευρημάτων μέσα σε ένα report δεν είναι πάντα εύκολη. Ευτυχώς το Power BI μας δίνει εύκολους τρόπους να εξερευνήσουμε τα δεδομένα μας. Χρησιμοποιώντας σαν παράδειγμα το demo report της Microsoft για το training <a href="https://powerbi.microsoft.com/en-us/diad/">Dashboard in a Day</a>, βλέπουμε πως μπορούμε βρούμε ενδιαφέροντα ευρήματα.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=q2-QCIoRTww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 <!--
 <hr>
@@ -89,48 +89,6 @@ Tόσο <a href="https://github.com/mantzos/Power-BI-Demos/raw/main/Marketing%20
 
 <p><a href="https://github.com/mantzos" class="icon brands style2 fa-github"><span class="label">GitHub</span></a><b> <a href="https://github.com/mantzos/Power-BI-Demos/tree/main/Marketing%20%26%20Sales">Download the resources from my Github Repo</b></a></p>
 -->
-
-<hr>
-<h2>Text Analytics for a Pizza Shop</h2>
-<p>This is a series of tutorials and accompanying report &amp; notebook resources. On the relevant YouTube videos, I showcase how to perform <b>sentiment analysis, text translation and key phrase extraction</b> using <b>Cognitive Services, Power BI and Azure Synapse Analytics</b>. The end result is a <a href="https://github.com/mantzos/Text-Analytics-Demo/raw/main/files/Report%20Ready.pbix">Power BI report</a>, supposingly used by the pizzeria owner to understand why sales change, based on the customer feedback and the sentiment it indicates. This report, as well as intermediate resources used to follow the tutorials, can be downloaded from the relevant GitHub repo.</p>
-
-<h4>1) Intro</h4>
-<p>This is the introduction of the tutorials. The meat and potatoes are in the subsequent videos, as well as in the materials on GitHub.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLYNK5hcCd-f3pO_yVNxu20Lhs-OORFEIa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-</p>
-
-
-<h4>2) Provision Azure Resources</h4>
-
-<p>Having an Azure account as a prerequisite, the first step involves the provision of Azure Synapse Analytics &amp; Cognitive Services resources.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sHV2t0bERG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
-
-<h4>3) Spark notebook in Synapse</h4>
-<p>This step shows how to use Cognitive Services within Synapse Analytics, to perform automatic text translation, key phrase extraction and sentiment analysis. A <a href="https://raw.githubusercontent.com/mantzos/Text-Analytics-Demo/main/files/synapse_comments_tab.txt">text file</a> is used as input in the <a href="https://github.com/mantzos/Text-Analytics-Demo/blob/main/Spark%20notebook%20v.1.ipynb">Spark notebook</a> demonstrated in the video.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qNxowFYhu-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
-
-<h4>4) Creating the Power BI dataset</h4>
-<p>Next we connect to Azure Synapse workspace &amp; Azure Data Lake with Power BI. In addition to retrieving the output of the previous step, we connect to Cognitive Services from within Power BI, set up Data Flows and incremental refresh. The end result is a <a href="https://github.com/mantzos/Text-Analytics-Demo/raw/main/files/Data%20ready.pbix">Power BI dataset</a> that can be used for reporting &amp; visualizations.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7QL4jabdhIU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
-
-
-<h4>5) Creating the report</h4>
-<p>
-Then we work on the <a href="https://github.com/mantzos/Text-Analytics-Demo/raw/main/files/Data%20ready.pbix">Power BI dataset</a> to create the visuals of the report, and produce the <a href="https://github.com/mantzos/Text-Analytics-Demo/raw/main/files/Report%20Ready.pbix">final result</a>.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GE56zs8xR2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-</p>
-<h4>6) Epilogue</h4>
-<p>Wrap-up and some thoughts on the value brought to organizations by the Cloud.</p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HRT8Gnrs_Yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</p>
-
-
-
-<p><a href="https://github.com/mantzos" class="icon brands style2 fa-github"><span class="label">GitHub</span></a><b> <a href="https://github.com/mantzos/Text-Analytics-Demo">Download the resources from my Github Repo</b></a></p>
 
 							
 						</div>
