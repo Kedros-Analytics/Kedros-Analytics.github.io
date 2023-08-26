@@ -2386,6 +2386,9 @@ input, select, textarea {
 			border: solid 1px #c9c9c9;
 			border-left: 0;
 			border-right: 0;
+			border-bottom:0;
+			border-top:0;
+			text-align:justify;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
@@ -2394,6 +2397,9 @@ input, select, textarea {
 
 		table td {
 			padding: 0.75em 0.75em;
+			vertical-align : middle;
+			background-color:white;
+			
 		}
 
 		table th {
@@ -2402,7 +2408,7 @@ input, select, textarea {
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
-
+/*
 		table thead {
 			border-bottom: solid 2px #c9c9c9;
 		}
@@ -2410,7 +2416,7 @@ input, select, textarea {
 		table tfoot {
 			border-top: solid 2px #c9c9c9;
 		}
-
+*/
 		table.alt {
 			border-collapse: separate;
 		}
