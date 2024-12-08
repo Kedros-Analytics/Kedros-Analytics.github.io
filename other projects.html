@@ -77,15 +77,43 @@
 							
 							<h1>Projects in other industries</h1>
 							
-							<p><b>Power BI reporting packs and cloud data flows for a leading Greek Energy provider</b><br>
+							<p><b>Data Lakehouse &amp; Power BI reporting packs for a leading Greek Energy provider</b><br>
 							
-							Implemented analytical assets that help the client organization monitor the financial and operational performance of their e-mobility assets, as well as manage risks in the energy market.
+							<p>Matt has worked together with a Big 4 consulting firm, to streamline decision making in the e-mobility sector of a leading Greek energy provider, developing Power BI reports and the relevant Data Lakehouse in Azure Databricks, Azure Data Factory &amp; Microsoft Fabric.</p>
+								
+<ul>
+<li><font style="color:#000000">Designed &amp; developed Power BI reports to help monitor utilization, availability, and revenue of e-vehicle charging stations, 
+and to provide insights on their comparative evolution across markets, coordinating with stakeholders to elicit requirements and ensure alignment with GDPR &amp; corporate policies.</li>
 
-								<ul>
-								<li>Designed &amp; developed Power BI reports to help monitor utilization, availability and revenue of e-vehicle charging stations, and provide insights on their comparative evolution across markets &amp; partners. </li>
-								<li>Designed &amp; developed Databricks PySpark notebooks and Delta tables, to transform source systems input; created the final data marts that populate the reports in Azure Synapse, through T-SQL transformations.</li>
-								<li>Designed &amp; developed Azure Data Factory pipelines to orchestrate the ELT data flows and access the e-mobility platforms API's, in addition to risk management systems focused on the energy stock market.</li>
-								</ul>
+<ul><i>
+<li>Designed Star schemas with multiple tables per dimension (used for comparing metrics through TREATAS).</li>
+<li>Created calculation groups &amp; field parameters, to present visuals with alternating measures (including custom formats).</li>
+<li>Implemented drill-through and bookmark features using buttons to enhance the customer experience.</li>
+<li>Established Role Based Security, created Power BI Apps &amp; implemented DAX for time-based intelligence.</li>
+<li>Developed Power BI Paginated reports for users to easily download data from the model for ad-hoc analysis.</li>
+</i></ul>
+
+<li>Designed &amp; developed Azure Data Factory pipelines to orchestrate the ELT data flows and access the e-mobility platforms API's, and guided stakeholders on effective data management.</li>
+
+<ul><i>
+<li>Read external API's through Post &amp; Get activities, leveraging connection tokens, and saved JSON output to Data Lake.</li>
+<li>Enhanced API input with Excel data stored by the business, through API calls to SharePoint / MS Teams.</li>
+<li>Parametrized Databricks &amp; Fabric Notebooks, to be callable by pipelines &amp; process the input into Parquet &amp; Delta Tables.</li>
+<li>Created unit tests &amp; integration testing notebooks, and guided the team to incorporate automatic DQ controls into the ELT.</li>
+<li>Provided guidance to stakeholders on data quality management, data governance, and AI &amp; advanced analytics deployment.</li>
+</i></ul>
+
+<li>Designed &amp; developed Databricks PySpark notebooks to curate source data (mainly JSON) into Parquet &amp; Delta tables, and established a PoC for migrating the Lakehouse to Microsoft Fabric.</li>
+
+<ul><i>
+<li>Wrote Python code to transform JSON input to Parquet files, and cleanse data as per business requirements.</li>
+<li>Calculated e-chargers availability from status logs, through PySpark Dataframes (also leveraging window functions).</li>
+<li>Created incremental loading capabilities, leveraging Delta Tables, minimizing risks &amp; ensuring modular data processing.</li>
+<li>Created T-SQL stored procedures to calculate charging sessions duration, allocating them to appropriate hour intervals.</li>
+<li>Migrated notebooks, semantic models &amp; ADF pipelines to Fabric, refactoring for direct lake access &amp; mssparkutils usage.</li>
+</i></ul>
+</font>
+</ul>
 															
 							<p><b>Marketing Mix Modeling Software for a Marketing Analytics provider</b><br> Matt was a member of the team who designed and implemented the software to model weekly sales time series, incorporating pricing, advertising, promotional, seasonal and macroeconomic effects. The company's analysts used the software on a daily basis, to evaluate models from a marketing perspective, interpret the impact on sales of key drivers, and prepare recommendations for customers worldwide.</p>
 							
