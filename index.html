@@ -12,6 +12,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <style>
+    /* Default: hide both initially */
+    .mobile-frame, .desktop-frame {
+      display: none;
+    }
+
+    /* Show mobile version on small screens (phones) */
+    @media only screen and (max-width: 767px) {
+      .mobile-frame {
+        display: block;
+      }
+    }
+
+    /* Show desktop version on larger screens (laptops/desktops) */
+    @media only screen and (min-width: 768px) {
+      .desktop-frame {
+        display: table-cell; /* since your laptop version uses <td> */
+      }
+    }
+  </style>
+  
 </head>
 
 	
@@ -176,6 +198,43 @@
 </section>
 
 <br><br>
+<!-- Mobile iframe -->
+  <div class="mobile-frame">
+    <iframe
+      width="410"
+      height="730"
+      src="https://www.youtube.com/embed/TshEgbDOkjo"
+      title="Who I am"
+      frameborder="1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Desktop iframe -->
+  <table>
+
+  <tr>
+    <td>
+		<iframe width="239" height="425" src="https://www.youtube.com/embed/TshEgbDOkjo" title="Who I am" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</td>
+    <td>
+		
+		<p style="font-style: italic; text-align: center;">“My 15+ years of facilitating data-driven decision-making in Finance, Operations &amp; Supply Chain Management, working with leading consultancies and global enterprises across Europe, have taught me that people and structure are more important than technology and tools.</p>
+
+		<p style="font-style: italic; text-align: center;">However technology helps too ...
+
+		<p style="font-style: italic; text-align: center;">I can guide your company in advancing data-driven decision making, and ensure high ROI at every stage, while leading teams to deliver the right capabilities through a structured process focused on quality, timeliness, and innovation.”</p>
+	</td>
+  </table>
+  
+<!--
+<br><br>
+<p style="text-align: center;">
+<iframe width="410" height="730" src="https://www.youtube.com/embed/TshEgbDOkjo" title="Who I am" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</p>
+
+
 <table>
 
   <tr>
@@ -191,6 +250,7 @@
 		<p style="font-style: italic; text-align: center;">I can guide your company in advancing data-driven decision making, and ensure high ROI at every stage, while leading teams to deliver the right capabilities through a structured process focused on quality, timeliness, and innovation.”</p>
 	</td>
 </table> 
+-->
 
 
 <br>
