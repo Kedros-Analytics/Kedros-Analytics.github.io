@@ -24,6 +24,11 @@
 
 	<body class="is-preload">
 	
+	<script type="module">
+		import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+		mermaid.initialize({ startOnLoad: true });
+	</script>
+	
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -67,18 +72,31 @@
 <h2>Maturity of data-driven decision making</h2>
 <p>There are 4 levels of analytics maturity a company can achieve - with each level enabling more data-driven decisions and more business value.</p>
 
+<div style="text-align: center;">
+<div class="mermaid">
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "primaryColor": "#003b2b",
+    "primaryTextColor": "#ffffff",
+    "primaryBorderColor": "#003b2b",
+    "lineColor": "#003b2b"
+  }
+}}%%
+graph LR
+    A[Initial Stage] --> B[Emerging Stage]
+    B --> C[Scaled Stage]
+    C --> D[Optimized Stage]
+</div></div>
+
+<br>
+
   <p>
     Traditionally, a scaled analytics landscape was something only large corporations could afford.
     They built extensive data warehouses—massive projects involving large teams of people working
     for months or even years—to establish that <em>“single version of truth”</em> which enabled them
     to produce consistent and accurate reports automatically.
   </p>
-  
-<br>
-
-<img src="images/AnalyticsMaturityLevels.png" alt="Analytics Maturity Levels" style="display: block; margin-left: auto; margin-right: auto; border: 2px solid #000; padding: 4px; border-radius: 6px;">
-
-<br><br>
 
 
 
