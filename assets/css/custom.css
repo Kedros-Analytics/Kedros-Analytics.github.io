@@ -72,6 +72,86 @@
 		margin: 0 auto;
 	}
 
+/* Hero */
+
+.k-hero {
+	background: var(--brand-tint);
+	padding: 4.5em 0;
+}
+
+.k-hero-container {
+	max-width: none;
+	text-align: center;
+}
+
+.k-hero h1 {
+	color: var(--brand);
+	font-size: 1.7em;
+	font-weight: 800;
+	line-height: 1.3;
+	margin: 0 0 0.5em 0;
+	white-space: nowrap;
+}
+
+.k-hero p {
+	max-width: 44em;
+	margin: 0 auto 1.75em auto;
+	color: var(--muted);
+	font-size: 1.1em;
+	line-height: 1.6;
+}
+
+	@media screen and (max-width: 980px) {
+		.k-hero h1 {
+			font-size: 1.4em;
+		}
+	}
+
+.k-hero-actions {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.k-btn--outline {
+	background: #ffffff;
+	border: 2px solid var(--brand);
+	color: var(--brand) !important;
+	box-shadow: none;
+	padding: calc(0.95em - 2px) calc(2.1em - 2px);
+}
+
+	.k-btn--outline:hover {
+		background: var(--brand);
+		color: #ffffff !important;
+		transform: translateY(-2px);
+	}
+
+	@media screen and (max-width: 736px) {
+		.k-hero {
+			padding: 3.5em 0;
+		}
+
+		.k-hero h1 {
+			font-size: 1.3em;
+			white-space: normal;
+		}
+
+		.k-hero p {
+			font-size: 1em;
+		}
+
+		.k-hero-actions {
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		.k-hero-actions .k-btn {
+			text-align: center;
+		}
+	}
+
 /* Sections & spacing */
 
 .k-section {
@@ -225,16 +305,6 @@
 		.k-about p {
 			text-align: justify;
 		}
-	}
-
-/* CTA banner */
-
-.k-cta {
-	text-align: center;
-}
-
-	.k-cta a.k-btn {
-		font-size: 1.05em;
 	}
 
 /* Two-column layout: Corporate Insights / Free Tools */
