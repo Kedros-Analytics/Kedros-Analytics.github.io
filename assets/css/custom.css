@@ -307,6 +307,17 @@
 		}
 	}
 
+/* CTA banner */
+
+.k-cta {
+	text-align: center;
+	padding-top: 1.5em;
+}
+
+	.k-cta a.k-btn {
+		font-size: 1.05em;
+	}
+
 /* Two-column layout: Corporate Insights / Free Tools */
 
 .k-two-col {
@@ -338,21 +349,6 @@
 		color: var(--muted);
 		margin: 0 0 0.5em 0;
 		text-align: justify;
-	}
-
-.k-insights-form {
-	background: #ffffff;
-	border: 1px solid var(--border);
-	border-radius: var(--radius);
-	box-shadow: var(--shadow);
-	padding: 0.75em;
-}
-
-	.k-insights-form iframe {
-		display: block;
-		width: 100%;
-		border: 0;
-		border-radius: calc(var(--radius) - 4px);
 	}
 
 /* Tool cards (right column) */
