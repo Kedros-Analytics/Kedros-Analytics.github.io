@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Customized for Kedros Analytics.
+-->
+<html>
+<head>
+
+<title>Case Study: Data Lakehouse &amp; BI Reports | Kedros Analytics</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="How Kedros Analytics migrated a Fortune Europe 500 energy provider to a Microsoft Fabric Data Lakehouse and delivered Power BI reporting on e-mobility performance." />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/custom.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+	.k-subnav { background: #ffffff; border-bottom: 1px solid var(--border); }
+	.k-subnav .k-container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75em; padding-top: 1em; padding-bottom: 1em; }
+	.k-subnav a { color: var(--muted); text-decoration: none; font-size: 0.92em; }
+	.k-subnav a:hover { color: var(--brand); }
+	.k-subnav .k-back { font-weight: 700; color: var(--brand); }
+	.k-subnav .k-sibling-links { display: flex; gap: 1.5em; flex-wrap: wrap; }
+	.k-sibling-links a.is-current { color: var(--brand); font-weight: 700; }
+
+	.k-case-tag { display: inline-block; background: rgba(255,255,255,0.15); color: #ffffff; font-size: 0.8em; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.4em 0.9em; border-radius: 999px; margin-bottom: 1em; }
+	.k-hero.k-case-hero { background: var(--brand); padding: 3.5em 0; }
+	.k-case-hero h1 { color: #ffffff; }
+	.k-case-hero p.k-case-sub { color: rgba(255,255,255,0.85); max-width: 44em; margin: 0 auto; font-size: 1.05em; }
+
+	.k-lede-block { max-width: 52em; margin: 0 auto; }
+	.k-lede-block h2 { color: var(--brand); font-size: 1.5em; font-weight: 700; margin: 0 0 0.75em 0; }
+	.k-lede-block p { color: var(--muted); text-align: justify; margin: 0 0 1em 0; }
+
+	.k-approach-list { display: flex; flex-direction: column; gap: 1em; max-width: 52em; margin: 0 auto; }
+	.k-approach-item { display: flex; gap: 1em; align-items: flex-start; }
+	.k-approach-item .k-check { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--brand-tint); color: var(--brand); display: flex; align-items: center; justify-content: center; font-weight: 800; margin-top: 0.1em; }
+	.k-approach-item p { margin: 0; color: var(--muted); text-align: justify; }
+	.k-approach-item strong { color: var(--brand-dark); }
+
+	.k-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; max-width: 52em; margin: 0 auto; }
+	.k-stat { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.75em 1.25em; text-align: center; }
+	.k-stat .k-stat-num { font-size: 1.9em; font-weight: 800; color: var(--brand); display: block; }
+	.k-stat .k-stat-label { color: var(--muted); font-size: 0.88em; }
+
+	@media screen and (max-width: 700px) {
+		.k-stat-grid { grid-template-columns: 1fr; }
+	}
+</style>
+
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper">
+
+<header id="header" class="k-header">
+	<div class="k-container">
+		<a href="index.html"><span class="image"><img src="images/kedrosbanner.png" alt="Kedros Analytics - Empowering Businesses with Smarter Insights" /></span></a>
+	</div>
+</header>
+
+<nav class="k-subnav">
+	<div class="k-container">
+		<a class="k-back" href="index.html">&larr; Back to Kedros Analytics</a>
+		<div class="k-sibling-links">
+			<a href="case-construction-tools.html">AI-Powered Analytics</a>
+			<a class="is-current" href="case-energy-lakehouse.html">Energy Data Lakehouse</a>
+			<a href="case-global-powerbi.html">Global Supply Chain BI</a>
+		</div>
+	</div>
+</nav>
+
+<section class="k-hero k-case-hero">
+	<div class="k-container k-hero-container">
+		<span class="k-case-tag">Case study</span>
+		<h1>Data Lakehouse &amp; BI reports</h1>
+		<p class="k-case-sub">Fortune Europe 500 energy provider &mdash; Microsoft Fabric Medallion Architecture &amp; Power BI</p>
+	</div>
+</section>
+
+<div id="main">
+
+	<section class="k-section">
+		<div class="k-container">
+			<div class="k-lede-block">
+				<h2>The challenge</h2>
+				<p>One of Europe's 500 biggest companies needed to monitor the financial and operational performance of its growing e-mobility business &mdash; charging station utilization, availability and revenue &mdash; while also managing risk in the energy market. Their existing analytical assets needed to move onto a modern, scalable foundation without disrupting the reporting the business relied on.</p>
+			</div>
+		</div>
+	</section>
+
+	<hr class="k-divider" />
+
+	<section class="k-section k-section--tint">
+		<div class="k-container">
+			<div class="k-lede-block">
+				<h2>What we did</h2>
+			</div>
+			<div class="k-approach-list">
+				<div class="k-approach-item">
+					<span class="k-check">&#10003;</span>
+					<p><strong>Led the migration to Microsoft Fabric,</strong> designing the Bronze and Silver Lakehouses and the Gold dimensional Data Warehouse, with source-to-destination mapping to control the data distillation process.</p>
+				</div>
+				<div class="k-approach-item">
+					<span class="k-check">&#10003;</span>
+					<p><strong>Guided the team through the Databricks migration,</strong> expanding notebooks to record SCD Type 2 history in Delta Tables and building the SQL pipelines that populate the full dimensional warehouse, including SCD Type 6 dimensions.</p>
+				</div>
+				<div class="k-approach-item">
+					<span class="k-check">&#10003;</span>
+					<p><strong>Built the semantic model and DAX measures</strong> underpinning the Power BI reports, empowering business analysts to run their own analyses.</p>
+				</div>
+				<div class="k-approach-item">
+					<span class="k-check">&#10003;</span>
+					<p><strong>Developed Power BI reports on charging station performance,</strong> covering utilization, availability and revenue, with drill-through, bookmarks, role-based security and paginated reports for ad-hoc downloads.</p>
+				</div>
+				<div class="k-approach-item">
+					<span class="k-check">&#10003;</span>
+					<p><strong>Established a data quality process,</strong> with automated controls and monitoring reports migrated into the new Fabric notebooks and pipelines.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="k-divider" />
+
+	<section class="k-section">
+		<div class="k-container">
+			<div class="k-lede-block">
+				<h2>The impact</h2>
+			</div>
+			<div class="k-stat-grid">
+				<div class="k-stat">
+					<span class="k-stat-num">3</span>
+					<span class="k-stat-label">Medallion layers migrated to Microsoft Fabric</span>
+				</div>
+				<div class="k-stat">
+					<span class="k-stat-num">1</span>
+					<span class="k-stat-label">consolidated view of e-mobility performance across markets</span>
+				</div>
+				<div class="k-stat">
+					<span class="k-stat-num">RLS</span>
+					<span class="k-stat-label">role-based security and Power BI Apps for governed self-service</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="k-divider" />
+
+	<section class="k-section k-section--tint">
+		<div class="k-container">
+			<div class="k-testimonial-card" style="max-width: 46em; margin: 0 auto;">
+				<span class="k-quote-mark">&#8220;</span>
+				<p class="k-quote">His in-depth knowledge of BI tools and professionalism are standing out and helped deliver 1st class Power BI reports. What I really enjoy about Matt is his ability to connect with people, he is a true professional and team player.</p>
+				<p class="k-person">Angelos Paidas</p>
+				<p class="k-role">Head of e-Mobility Products &amp; Services, Fortune Europe 500 Energy Provider</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="k-section k-cta">
+		<div class="k-container">
+			<a class="k-btn" href="https://outlook.office.com/bookwithme/user/39bc6460121743d6b37f914eaf50e61f@KedrosAnalytics.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous&amp;ep=mlink">Book a Free Call</a>
+		</div>
+	</section>
+
+</div>
+
+<footer id="footer">
+	<div class="inner">
+
+		<section>
+			<ul class="icons">
+				<li><a href="https://outlook.office.com/bookwithme/user/39bc6460121743d6b37f914eaf50e61f@KedrosAnalytics.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous&ep=mlink" class="icon solid style2 fa-calendar" id="bookwithme"><span class="label">Book a Call</span></a></li>
+				<li><a href="mailto:Matt@KedrosAnalytics.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://www.linkedin.com/company/protopapas-analytics" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/mattprotopapas" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCNyea4_GisCpFFa-QSf9YWQ" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
+			</ul>
+		</section>
+		<ul class="copyright">
+			<li>&copy; 2026 Protopapas Analytics E.E. All rights reserved</li>
+			<li><a href="privacy%20policy.html"> Privacy Policy</a></li>
+			<li><a href="company_info.html">Company Info</a></li>
+		</ul>
+	</div>
+</footer>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+_linkedin_partner_id = "8787249";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=8787249&fmt=gif" />
+</noscript>
+
+</body>
+</html>

@@ -14,6 +14,19 @@
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/custom.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+	.k-example-link-card { display: flex; flex-direction: column; }
+	.k-example-link-card .k-example-icon {
+		width: 56px; height: 56px; border-radius: 8px; background: var(--brand);
+		display: flex; align-items: center; justify-content: center; margin-bottom: 1em;
+	}
+	.k-example-link-card .k-example-icon svg { width: 30px; height: 30px; }
+	.k-example-link-card p { flex: 1 1 auto; }
+	.k-example-link-card a.k-link {
+		color: var(--brand); font-weight: 700; text-decoration: none !important; margin-top: 1em;
+	}
+	.k-example-link-card a.k-link:hover { color: var(--brand-light); }
+</style>
 
 </head>
 
@@ -66,6 +79,34 @@
 
 	<hr class="k-divider" />
 
+	<!-- Examples by area -->
+	<section class="k-section">
+		<div class="k-container">
+			<div class="k-section-head">
+				<span class="k-kicker">Analytics Examples</span>
+			</div>
+			<div class="k-grid-3">
+				<div class="k-card k-example-link-card">
+	<h3>Logistics</h3>
+					<p>See how demand planning, OTIF visibility and reorder optimization help SMEs buy the right amount, at the right time.</p>
+					<a class="k-link" href="supply-chain.html">Logistics examples &rarr;</a>
+				</div>
+				<div class="k-card k-example-link-card">
+	<h3>Financial Planning</h3>
+					<p>See how rolling forecasts, margin monitoring and self-service variance analysis sharpen budget decisions.</p>
+					<a class="k-link" href="fpa.html">FP&amp;A examples &rarr;</a>
+				</div>
+				<div class="k-card k-example-link-card">
+	<h3>Marketing</h3>
+					<p>See how campaign tracking, market basket analysis and lead scoring point marketing budget at what actually converts.</p>
+					<a class="k-link" href="marketing.html">Marketing examples &rarr;</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="k-divider" />
+
 	<!-- About -->
 	<section class="k-section k-section--tint">
 		<div class="k-container">
@@ -92,11 +133,11 @@
 				</div>
 				<div class="k-card">
 					<h3>End-to-End Projects</h3>
-					<p>With my solid experience in Data &amp; Analytics, I can make sure that automated data pipelines, BI apps and AI-powered Analytics are properly integrated into your operational and decision-making processes, together with my <a href="Collaborators.html">partners</a>.</p>
+					<p>With my solid experience in Data &amp; Analytics, I can make sure that automated data pipelines, BI apps and AI-powered Analytics are properly integrated into your operations and decisions, together with my <a href="Collaborators.html">partners</a>.</p>
 				</div>
 				<div class="k-card">
 					<h3>Contract work</h3>
-					<p>I can work within your team full-time, for the scope you specify and a fixed time period (6+ months for optimal value generation). <a href="assets/CV.pdf">View my CV</a> for details on relevant projects and international teams I've worked with.</p>
+					<p>I can work within your team full-time, for the scope you specify and a fixed time period (6+ months for optimal value generation). <a href="assets/CV.pdf">View my CV</a> for relevant international projects &amp; teams I've worked with.</p>
 				</div>
 			</div>
 		</div>
@@ -112,18 +153,20 @@
 				<h2>Recent Projects</h2>
 			</div>
 			<div class="k-grid-3">
-				<div class="k-project-card">
-					<p class="k-project-title"><a href="https://fortune.com/ranking/global500/">Global 500 Company</a></p>
-					<p>Contributed to the design of a <a href="https://www.gartner.com/en/articles/what-is-a-supply-chain-control-tower-and-what-s-needed-to-deploy-one.html">Control Tower</a>, developed <a href="https://app.powerbi.com/">Power BI</a> dashboards on 3PL performance &amp; OTIF measurement, and refactored underlying data models, improving cost-benefits ratio by &gt; 400%.</p>
+				<div class="k-card">
+					<h3>Global 500 Company</h3>
+					<p>Contributed to the design of a <a href="https://www.gartner.com/en/articles/what-is-a-supply-chain-control-tower-and-what-s-needed-to-deploy-one.html">Control Tower</a>, developed <a href="https://app.powerbi.com/">Power BI</a> dashboards on 3PL performance &amp; OTIF measurement, and refactored data models, improving the cost-benefit ratio by &gt; 400%.</p>
+					<p><a href="case-global-powerbi.html" style="color: var(--brand); font-weight: 700;">Read the case study &rarr;</a></p>
 				</div>
-				<div class="k-project-card">
-					<p class="k-project-title"><a href="https://fortune.com/europe/ranking/fortune500-europe/">Europe 500 Company</a></p>
+				<div class="k-card">
+					<h3>Europe 500 Company</h3>
 					<p>Led a team to create a Medallion Lakehouse on <a href="https://www.microsoft.com/en-us/microsoft-fabric">Microsoft Fabric</a> and to migrate data assets from <a href="https://www.databricks.com/">Databricks</a> and <a href="https://azure.microsoft.com/en-us/products/synapse-analytics">Synapse</a>, enabling solid governance, quality and a consolidated view, though BI reports and self-service analytics.</p>
+					<p><a href="case-energy-lakehouse.html" style="color: var(--brand); font-weight: 700;">Read the case study &rarr;</a></p>
 				</div>
-				<div class="k-project-card">
-					<p class="k-project-title"><a href="https://en.wikipedia.org/wiki/List_of_tool_manufacturers">Global Tools Company</a></p>
-					<p>Designed the data &amp; analytics architecture in Microsoft Fabric and developed semantic &amp; data products to
-					power AI-driven recommendations so that sales teams across the world manage business opportunities proactively.</p>
+				<div class="k-card">
+					<h3>Global Manufacturer</h3>
+					<p>Designed the data &amp; analytics architecture in Microsoft Fabric and developed semantic &amp; data products to power AI-driven recommendations, helping sales teams worldwide manage opportunities proactively.</p>
+					<p><a href="case-construction-tools.html" style="color: var(--brand); font-weight: 700;">Read the case study &rarr;</a></p>
 					<!--<p>Helped a global industrial tools company based in Switzerland to develop an AI-powered app and support front line employees, by designing data architectures, implementing controls, and developing PySpark notebooks on <a href="https://www.microsoft.com/en-us/microsoft-fabric">MS Fabric</a>.</p>-->
 				</div>
 			</div>
@@ -205,6 +248,7 @@
 							</div>
 						</a>
 					</div>
+					<p style="margin-top: 1.25em; text-align: center;"><a class="k-link" href="https://www.youtube.com/channel/UCNyea4_GisCpFFa-QSf9YWQ" style="color: var(--brand); font-weight: 700;">More on YouTube &rarr;</a></p>
 				</div>
 
 				<!-- Free tools for SMEs -->
@@ -236,6 +280,7 @@
 							</div>
 						</a>
 					</div>
+					<p style="margin-top: 1.25em; text-align: center;"><a class="k-link" href="https://github.com/mattprotopapas" style="color: var(--brand); font-weight: 700;">More on GitHub &rarr;</a></p>
 				</div>
 
 			</div>
@@ -249,7 +294,6 @@
 	<div class="inner">
 
 		<section>
-			<h3>More resources and ways to contact me:</h3>
 			<ul class="icons">
 				<li><a href="https://outlook.office.com/bookwithme/user/39bc6460121743d6b37f914eaf50e61f@KedrosAnalytics.com/meetingtype/SVRwCe7HMUGxuT6WGxi68g2?anonymous&ep=mlink" class="icon solid style2 fa-calendar" id="bookwithme"><span class="label">Book a Call</span></a></li>
 				<li><a href="mailto:Matt@KedrosAnalytics.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
