@@ -11,7 +11,7 @@
 <title>Case Study: Analytical Products for an AI-Powered App | Kedros Analytics</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="How Kedros Analytics designed the data architecture and semantic layer behind an AI-powered sales app for a global manufacturing company." />
+<meta name="description" content="How Kedros Analytics designed the Microsoft Fabric data architecture, AI-ready semantic layer and data products behind an AI-powered sales application for a global construction tools company." />
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/custom.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -38,6 +38,9 @@
 	.k-approach-item .k-check { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--brand-tint); color: var(--brand); display: flex; align-items: center; justify-content: center; font-weight: 800; margin-top: 0.1em; }
 	.k-approach-item p { margin: 0; color: var(--muted); text-align: justify; }
 	.k-approach-item strong { color: var(--brand-dark); }
+	.k-approach-item .k-approach-body { flex: 1 1 auto; }
+	.k-approach-item ul { margin: 0.6em 0 0 0; padding-left: 1.2em; }
+	.k-approach-item ul li { color: var(--muted); font-size: 0.92em; margin: 0 0 0.3em 0; padding-left: 0; text-align: left; }
 
 	.k-stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; max-width: 52em; margin: 0 auto; }
 	.k-stat { background: #ffffff; border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); padding: 1.75em 1.25em; text-align: center; }
@@ -76,7 +79,7 @@
 	<div class="k-container k-hero-container">
 		<span class="k-case-tag">Case study</span>
 		<h1>Analytical products for an AI-powered application</h1>
-		<p class="k-case-sub">Global manufacturing company &mdash; Microsoft Fabric, semantic modelling &amp; AI-assisted engineering</p>
+		<p class="k-case-sub">Global construction tools company &mdash; Microsoft Fabric, AI-ready semantic layer &amp; data products for AI-driven sales recommendations</p>
 	</div>
 </section>
 
@@ -86,7 +89,8 @@
 		<div class="k-container">
 			<div class="k-lede-block">
 				<h2>The challenge</h2>
-				<p>A global manufacturing company wanted its sales teams to manage business opportunities proactively, powered by AI-driven recommendations. That meant building an analytics foundation reliable enough for AI chatbots to answer real business questions accurately, and flexible enough to keep pace with new use cases as they emerged.</p>
+				<p>A global construction tools company wanted its sales teams worldwide to manage business opportunities proactively, guided by AI-driven recommendations inside a new application. Account managers needed to know which customers to meet, which opportunities to pursue, where orders stood and how their products were stocked in customer inventories, and they needed AI chatbots that could answer those questions accurately.</p>
+				<p>That required a data &amp; analytics foundation on Microsoft Fabric that was trusted, confidential and production-ready: a scalable architecture aligned with data federation principles, a semantic layer AI could reason over, and data products with the quality controls to keep every recommendation accurate and relevant.</p>
 			</div>
 		</div>
 	</section>
@@ -101,23 +105,36 @@
 			<div class="k-approach-list">
 				<div class="k-approach-item">
 					<span class="k-check">&#10003;</span>
-					<p><strong>Designed a Bronze, Silver &amp; Gold data architecture in Microsoft Fabric,</strong> aligned with data federation principles and meeting requirements for quality, security, governance and confidentiality.</p>
+					<div class="k-approach-body">
+						<p><strong>Designed and implemented a scalable data architecture in Microsoft Fabric,</strong> aligned with data federation principles while managing the non-functional requirements on data quality, security, governance and confidentiality.</p>
+						<ul>
+							<li>Designed Bronze, Silver &amp; Gold data layers following modular, domain-oriented design principles.</li>
+							<li>Defined governance, security and data quality standards to ensure trusted, confidential and production-ready analytical assets.</li>
+							<li>Collaborated with business and technical stakeholders to evolve the architecture as new AI-powered use cases emerged.</li>
+						</ul>
+					</div>
 				</div>
 				<div class="k-approach-item">
 					<span class="k-check">&#10003;</span>
-					<p><strong>Built an AI-ready semantic layer,</strong> modelling business entities, metrics and relationships so AI-powered chatbots could answer analytics questions with consistent, context-aware definitions.</p>
+					<div class="k-approach-body">
+						<p><strong>Designed and implemented an AI-ready semantic layer and its underlying data mart,</strong> enabling AI chatbots to give accurate, context-aware answers to the business questions of account managers.</p>
+						<ul>
+							<li>Modelled business entities, metrics and relationships to provide consistent semantic definitions for analytical questions.</li>
+							<li>Designed the underlying data layer to maximize retrieval speed and ensure the quality of the information provided.</li>
+							<li>Managed the development of these analytical assets using Claude in an AI-assisted process that delivered more than 10x productivity.</li>
+						</ul>
+					</div>
 				</div>
 				<div class="k-approach-item">
 					<span class="k-check">&#10003;</span>
-					<p><strong>Introduced an AI-assisted engineering workflow,</strong> using Claude and VS Code to generate design specs and mentoring the team on AI-collaborative development practices.</p>
-				</div>
-				<div class="k-approach-item">
-					<span class="k-check">&#10003;</span>
-					<p><strong>Developed PySpark and Spark SQL pipelines</strong> to ingest and transform source data spanning customer meetings, opportunities, app telemetry and recommendation adoption tracking.</p>
-				</div>
-				<div class="k-approach-item">
-					<span class="k-check">&#10003;</span>
-					<p><strong>Established automated data quality controls and test frameworks,</strong> catching completeness, validity and consistency issues before data products were published.</p>
+					<div class="k-approach-body">
+						<p><strong>Developed the pipelines, notebooks &amp; data products</strong> behind recommending customer meetings, managing opportunities, tracking orders and monitoring the company's product levels in customer inventories.</p>
+						<ul>
+							<li>Built notebooks in PySpark &amp; Spark SQL and Microsoft Fabric pipelines to ingest, transform and load the data products.</li>
+							<li>Worked closely with developers and business stakeholders to enable the downstream analytical capabilities of the application.</li>
+							<li>Introduced data quality controls to ensure the accuracy and relevance of the AI-powered recommendations to account managers.</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -132,16 +149,16 @@
 			</div>
 			<div class="k-stat-grid">
 				<div class="k-stat">
-					<span class="k-stat-num">15x</span>
-					<span class="k-stat-label">team productivity improvement from the AI-assisted workflow</span>
+					<span class="k-stat-num">&gt;10x</span>
+					<span class="k-stat-label">productivity in developing the semantic layer and data mart with Claude in an AI-assisted process</span>
 				</div>
 				<div class="k-stat">
-					<span class="k-stat-num">45-65%</span>
-					<span class="k-stat-label">faster query execution from the architecture &amp; design recommendations</span>
+					<span class="k-stat-num">4</span>
+					<span class="k-stat-label">AI-powered use cases served: customer meetings, opportunities, order tracking and customer inventory levels</span>
 				</div>
 				<div class="k-stat">
 					<span class="k-stat-num">1</span>
-					<span class="k-stat-label">AI-ready semantic layer powering sales-facing recommendations</span>
+					<span class="k-stat-label">AI-ready semantic layer giving global sales teams accurate, context-aware answers</span>
 				</div>
 			</div>
 		</div>
