@@ -36,6 +36,9 @@
 		display: flex; align-items: center; justify-content: center; overflow: hidden;
 	}
 	.k-example-media svg { width: 96px; height: 96px; }
+	.k-example-media.k-media-img { background: #fff; border: 1px solid var(--brand-tint); }
+	.k-example-media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+	.k-link-sep { color: var(--muted); margin: 0 0.6em; }
 	.k-example-body { flex: 1 1 auto; }
 	.k-example-kicker { display: block; color: var(--brand); font-weight: 700; font-size: 0.75em; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.5em; }
 	.k-example-body h3 { color: var(--brand); font-size: 1.3em; font-weight: 700; margin: 0 0 0.5em 0; }
@@ -116,13 +119,13 @@
 				</div>
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 34 L76 34 L68 76 L28 76 Z"/><path d="M20 34 L28 18 L68 18 L76 34"/><path d="M38 34 L42 76 M58 34 L54 76"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/MarketBasketSlide.png" alt="Slide from the market basket analysis deck: top association rules ranked by lift" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 2</span>
 						<h3>Market basket analysis</h3>
 						<p>Analyzing which products are bought together reveals natural bundles and cross-sell opportunities that aren't obvious from sales totals alone. Small companies can turn those patterns into "frequently bought together" suggestions and margin-friendly bundles, smarter product placement, and even better reorder planning for companion items &mdash; all without extra marketing spend.</p>
 						<p class="k-decision"><strong>Decision it enables:</strong> which products to bundle, promote together, or place near each other, online or in-store.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/08/03/how-can-a-small-company-use-market-basket-analysis/">Read the blog post &rarr;</a>
+						<a class="k-link" href="assets/slides/Kedros_Market_Basket_Analysis_SME_Stakeholders.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/08/03/how-can-a-small-company-use-market-basket-analysis/">Read the blog &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://youtu.be/FGfTB3Uqg5k" target="_blank" rel="noopener">Watch the video &rarr;</a>
 					</div>
 				</div>
 
