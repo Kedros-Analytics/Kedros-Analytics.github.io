@@ -36,6 +36,9 @@
 		display: flex; align-items: center; justify-content: center; overflow: hidden;
 	}
 	.k-example-media svg { width: 96px; height: 96px; }
+	.k-example-media.k-media-img { background: #fff; border: 1px solid var(--brand-tint); }
+	.k-example-media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+	.k-link-sep { color: var(--muted); margin: 0 0.6em; }
 	.k-example-body { flex: 1 1 auto; }
 	.k-example-kicker { display: block; color: var(--brand); font-weight: 700; font-size: 0.75em; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.5em; }
 	.k-example-body h3 { color: var(--brand); font-size: 1.3em; font-weight: 700; margin: 0 0 0.5em 0; }
@@ -102,35 +105,35 @@
 			<div class="k-example-list">
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="52" width="12" height="26"/><rect x="34" y="38" width="12" height="40"/><rect x="54" y="22" width="12" height="56"/><path d="M18 30 L40 16 L52 24 L78 8"/><path d="M68 8 L78 8 L78 18"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/InventoryOptimizationSlide.png" alt="Slide from the inventory optimization deck: ABC analysis showing half the items hold nearly 80% of inventory value" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 1</span>
 						<h3>Inventory Optimization</h3>
 						<p>Here's a pattern that shows up in almost every SME warehouse: roughly half the SKUs account for 80% of the cash tied up in inventory, yet most companies manage every item the same way, whether it's a $50/year fastener or a $2M/year component. ABC analysis, Economic Order Quantity and safety stock calculations replace "we always order 100 of these" with actual numbers for how much to order, when, and which items deserve the closest attention.</p>
 						<p class="k-decision"><strong>Decision it enables:</strong> how much of each product to order, and when; to decrease excess safety stock and free up real cash, without increasing the risk of stockouts on the products driving revenue.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/07/27/inventory-control-for-Small-and-Medium-companies/">Read the blog post &rarr;</a>
+						<a class="k-link" href="assets/slides/Inventory Optimization for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/07/27/inventory-control-for-Small-and-Medium-companies/">Read the blog &rarr;</a>
 					</div>
 				</div>
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="30" width="46" height="34"/><path d="M56 40 L74 40 L84 52 L84 64 L56 64"/><circle cx="24" cy="70" r="6"/><circle cx="72" cy="70" r="6"/><path d="M22 47 L30 55 L44 39"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/OTIFSlide.png" alt="Slide from the OTIF and 3PL tracking deck: four root causes explain 80% of the money at risk" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 2</span>
 						<h3>OTIF and 3PL Tracking</h3>
 						<p>Your 3PL says 96% of deliveries are on time. Your sales team keeps hearing about the order that arrived four days late, and the one that arrived on time with half the quantity missing. Who is right? Right now, probably nobody can tell you, and every late or short delivery costs you the same thing: a customer who remembers it at reorder time. Tracking on-time-in-full (OTIF) at the order-line level, and separating what your warehouse shipped late from what the carrier delivered late, puts a euro figure on every failed delivery and shows exactly where it went wrong: which site, which carrier, which product. And the result is usually a relief rather than a shock. A handful of root causes &mdash; a stockout on one SKU, one carrier lane, customs on one route &mdash; typically explain 80% of the money at stake. That is a list a small company can actually work through.</p>
 						<p class="k-decision"><strong>Decision it enables:</strong> which carrier lane to renegotiate or re-tender, which SKU needs safety stock, and which warehouse dock to go and look at; with a scorecard built from your own data instead of the 3PL's, so the conversation is about facts rather than opinions.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/09/07/are-your-orders-arriving-on-time-and-in-full/">Read the blog post &rarr;</a>
+						<a class="k-link" href="assets/slides/OTIF and 3PL Tracking for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/09/07/are-your-orders-arriving-on-time-and-in-full/">Read the blog &rarr;</a>
 					</div>
 				</div>
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22 L84 22" stroke-dasharray="6 6"/><path d="M12 74 L84 74" stroke-dasharray="6 6"/><path d="M12 48 L84 48"/><path d="M16 56 L30 42 L44 52 L58 40 L72 16"/><circle cx="72" cy="16" r="4" fill="#eef4f1"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/StaffingSlide.png" alt="Slide from the staffing deck: Saturday has the right number of hours in the wrong places" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 3</span>
-						<h3>Quality Control with Lean Six Sigma</h3>
-						<p>Most small manufacturers check quality against the spec limits: if the part is in tolerance, it ships. The problem is that a process can drift for days while still passing spec, quietly building up scrap and rework costs. Statistical process control &mdash; X-bar and R charts, p-charts and capability analysis (Cp/Cpk) &mdash; separates normal, everyday variation from genuine process shifts, so a filling line running a few grams high gets caught the same day instead of showing up weeks later as a 2% defect rate.</p>
-						<p class="k-decision"><strong>Decision it enables:</strong> when to stop and investigate the process versus leave it alone, and whether scrap and rework costs justify investing in better equipment.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/08/29/how-can-a-small-manufacturer-keep-quality-under-control/">Read the blog post &rarr;</a>
+						<h3>How Many Staff Do You Actually Need on a Saturday?</h3>
+						<p>Most small shops, caf&eacute;s and restaurants set staffing by habit: &ldquo;it&rsquo;s always been three.&rdquo; The result is too few people at the peak and too many in the quiet hours, and you pay for both: idle wages on one side, customers who see the queue and walk out on the other. Queueing theory (Erlang C) applied to your own till timestamps works out, for every hour of every weekday, the minimum number of staff needed to serve most customers within a few minutes. In a worked caf&eacute; example, Saturday had the right number of hours in the wrong places: it needed four people from 11:00 to 15:00 and fewer at the edges, and every weekday ran short from 17:00 to 19:00. Moving hours, not adding headcount, was the main fix.</p>
+						<p class="k-decision"><strong>Decision it enables:</strong> how many people to roster in each hour of each day, and which service-level target (for example, 80% of customers served within 5 minutes) balances wage cost against lost sales.</p>
+						<a class="k-link" href="assets/slides/Staffing with Queueing Theory for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/10/18/how-many-staff-do-you-actually-need-on-a-saturday/">Read the blog &rarr;</a>
 					</div>
 				</div>
 

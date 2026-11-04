@@ -11,7 +11,7 @@
 <title>Data, Analytics &amp; AI for Financial Planning &amp; Analysis | Kedros Analytics</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="How SMEs use data, analytics and AI to make better FP&A decisions: rolling forecasts with Aimplan, margin monitoring and self-service variance analysis." />
+<meta name="description" content="How SMEs use data, analytics and AI to make better FP&A decisions: rolling forecasts, margin monitoring and self-service variance analysis." />
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/custom.css" />
 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -36,6 +36,9 @@
 		display: flex; align-items: center; justify-content: center; overflow: hidden;
 	}
 	.k-example-media svg { width: 96px; height: 96px; }
+	.k-example-media.k-media-img { background: #fff; border: 1px solid var(--brand-tint); }
+	.k-example-media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+	.k-link-sep { color: var(--muted); margin: 0 0.6em; }
 	.k-example-body { flex: 1 1 auto; }
 	.k-example-kicker { display: block; color: var(--brand); font-weight: 700; font-size: 0.75em; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.5em; }
 	.k-example-body h3 { color: var(--brand); font-size: 1.3em; font-weight: 700; margin: 0 0 0.5em 0; }
@@ -111,47 +114,38 @@
 			<div class="k-example-list">
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 60 L34 44 L46 52 L80 20"/><path d="M80 20 L80 60" stroke-dasharray="5 6"/><path d="M46 52 L46 68" stroke-dasharray="5 6"/><path d="M16 60 L16 76 L80 76"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/DemandForecastingSlide.png" alt="Slide from the demand forecasting deck: picking the best method per product beats any single method" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 1</span>
-						<h3>Portfolio optimization</h3>
-						<p>Markowitz Mean-Variance Optimization, the Nobel Prize-winning framework behind modern portfolio theory, replaces gut-feel asset allocation with a calculation: for every unit of risk taken on, is this the best possible expected return available from your holdings.</p>
-						<p class="k-decision"><strong>Decision it enables:</strong> whether your current portfolio is genuinely diversified and sitting on the efficient frontier, or quietly carrying risk that isn't being paid for.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/08/07/how-can-investors-use-portfolio-optimization/">Read the blog post &rarr;</a>
+						<h3>Demand forecasting</h3>
+						<p>Small businesses often place purchase orders by gut feel, months before the sales happen, and nothing measures how reliable that estimate is. Simple methods such as seasonal naive, moving averages and Holt-Winters, tested against the last 13 weeks of your own sales history, show how far off each forecast really is, SKU by SKU. In a worked example of 30 SKUs, no single method won everywhere, and picking the best method per SKU cut average error from 32% to 26%. Sizing safety stock to the forecast error freed roughly &euro;46,000 of inventory.</p>
+						<p class="k-decision"><strong>Decision it enables:</strong> which products you can order straight from the forecast, which need extra buffer or human judgement, and how much safety stock each one really needs.</p>
+						<a class="k-link" href="assets/slides/Demand Forecasting for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/10/05/how-can-a-small-business-forecast-demand-for-next-month/">Read the blog &rarr;</a>
 					</div>
 				</div>
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 76 L24 20 M24 76 L80 76"/><rect x="34" y="52" width="10" height="24"/><rect x="50" y="38" width="10" height="38"/><rect x="66" y="60" width="10" height="16"/><path d="M35 44 L45 44 M56 30 L66 30" stroke-dasharray="4 5"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/CapitalBudgetingSlide.png" alt="Slide from the capital budgeting deck: the highest IRR is not the biggest value" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 2</span>
 						<h3>Capital budgeting</h3>
 						<p>Ranking competing capital requests by discounted cash flows, using Net Present Value as the single source of truth, replaces persuasive pitches with a consistent, auditable test: does this project add value to the firm, or does it just look good on a slide.</p>
 						<p class="k-decision"><strong>Decision it enables:</strong> which capital projects to fund, and which to reject, based on value created rather than IRR alone or who tells the best story.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/08/08/how-can-companies-decide-which-capital-projects-to-fund/">Read the blog post &rarr;</a>
+						<a class="k-link" href="assets/slides/Capital Budgeting for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/08/08/how-can-companies-decide-which-capital-projects-to-fund/">Read the blog &rarr;</a>
 					</div>
 				</div>
 
 				<div class="k-example">
-					<div class="k-example-media"><svg viewBox="0 0 96 96" fill="none" stroke="#eef4f1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20 L16 76 L80 76"/><path d="M24 28 C36 60 44 66 48 66 C52 66 60 60 72 28"/><circle cx="48" cy="66" r="3.5"/><path d="M48 66 L48 76" stroke-dasharray="4 5"/></svg></div>
+					<div class="k-example-media k-media-img"><img src="images/WorkingCapitalSlide.png" alt="Slide from the working capital deck: over- and under-invested inventory almost cancel out in the totals" /></div>
 					<div class="k-example-body">
 						<span class="k-example-kicker">Example 3</span>
 						<h3>Working capital in inventory</h3>
 						<p>Modeling the trade-off between carrying costs and shortage costs pins down an optimal inventory investment for every business unit, replacing firm-wide averages that quietly hide units holding far too much stock alongside units running dangerously lean.</p>
 						<p class="k-decision"><strong>Decision it enables:</strong> where to release cash tied up in excess inventory, and where to invest more to stop stock-outs eroding revenue.</p>
-						<a class="k-link" href="https://mattprotopapas.github.io/2026/08/27/how-much-working-capital-should-be-tied-up-in-inventory/">Read the blog post &rarr;</a>
+						<a class="k-link" href="assets/slides/Working Capital in Inventory for SMEs.pdf" target="_blank" rel="noopener">View the slides &rarr;</a><span class="k-link-sep">|</span><a class="k-link" href="https://mattprotopapas.github.io/2026/08/27/how-much-working-capital-should-be-tied-up-in-inventory/">Read the blog &rarr;</a>
 					</div>
 				</div>
 
-			</div>
-
-			<div class="k-partner-box">
-				<img class="k-partner-logo" src="images/aimplan_logo.jpg" alt="Aimplan logo" />
-				<div>
-					<h3>Our FP&amp;A partner: Aimplan</h3>
-					<p>Aimplan is a fast-growing international start-up based in Sweden, on a mission to help organizations reach and exceed their goals with superior planning and reporting. They've built a dedicated FP&amp;A extension for Power BI, and we help our clients put it to work &mdash; from forecasting and budgeting to scenario modeling and performance tracking.</p>
-					<a class="k-link" href="https://aimplan.com" style="color: var(--brand); font-weight: 700;">Learn more about Aimplan &rarr;</a>
-				</div>
 			</div>
 		</div>
 	</section>
